@@ -22,4 +22,8 @@
     <Folder Include="Support\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\RunTests.yml" />
+  </ItemGroup>
+
 </Project>

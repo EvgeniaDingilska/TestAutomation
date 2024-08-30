@@ -33,7 +33,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Run SpecFlow Tests
-        run: dotnet test --configuration Release --no-build --filter TestCategory=SpecFlow
+        run: dotnet test --configuration Release --no-build --filter TestCategory=EbayShop
 
       - name: Upload Test Results
         if: always()

@@ -31,15 +31,15 @@ namespace CalculatorSelenium.Specs.Drivers
         {
 
             var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArgument("--no-first-run");
-            chromeOptions.AddArgument("--no-default-browser-check");
-            chromeOptions.AddArgument("--disable-default-apps");
-            chromeOptions.AddArgument("--disable-popup-blocking");
-            chromeOptions.AddArgument("--disable-features=PreloadMediaEngagementData,AutofillServerCommunication");
-            chromeOptions.AddArgument("--disable-sync");
+            chromeOptions.AddArgument("--no-default-browser-check"); // Disables the default browser check prompt
+
+            // Optionally, you can add other arguments to improve performance or customize the browser
+            chromeOptions.AddArgument("--disable-extensions"); // Disable extensions
+            chromeOptions.AddArgument("--disable-popup-blocking"); // Disable pop-up blocking
+            chromeOptions.AddArgument("--start-maximized"); // Start the browser maximized
 
             var chromeDriver = new ChromeDriver("C:\\Users\\dingi\\source\\repos\\TestAutomation\\TestAutomation\\ChromeDriver\\chromedriver.exe", chromeOptions);
-            chromeDriver.Manage().Window.Maximize();
+            
             return chromeDriver;
         }
 

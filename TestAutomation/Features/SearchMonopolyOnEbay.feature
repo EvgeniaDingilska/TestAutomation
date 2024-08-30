@@ -17,3 +17,4 @@ Scenario: Search Monopoly on eBay
     When I select quantity 2 and add the item to the cart
     And I verify the cart URL is correct
     When I verify the quantity in the cart is 2
+    And I verify the price is displayed for 2 items

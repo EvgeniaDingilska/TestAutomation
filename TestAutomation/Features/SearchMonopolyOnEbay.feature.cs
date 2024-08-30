@@ -149,6 +149,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 19
     testRunner.When("I verify the quantity in the cart is 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+#line 20
+    testRunner.And("I verify the price is displayed for 2 items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

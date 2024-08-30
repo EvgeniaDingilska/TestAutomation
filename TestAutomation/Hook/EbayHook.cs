@@ -14,5 +14,11 @@ namespace TestAutomation.Hook
         {
             var basePage = new BasePage(browserDriver.Current);
         }
+
+        [AfterScenario("EbayShop")]
+        public static void AfterScenario(BrowserDriver browserDriver)
+        {
+            browserDriver.Current.Quit();
+        }
     }
 }

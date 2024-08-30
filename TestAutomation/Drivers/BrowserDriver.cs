@@ -38,7 +38,7 @@ namespace CalculatorSelenium.Specs.Drivers
             chromeOptions.AddArgument("--disable-popup-blocking"); // Disable pop-up blocking
             chromeOptions.AddArgument("--start-maximized"); // Start the browser maximized
 
-            var chromeDriver = new ChromeDriver($"{AppDomain.CurrentDomain.BaseDirectory}\\ChromeDriver\\chromedriver.exe", chromeOptions);
+            var chromeDriver = new ChromeDriver($"{AppDomain.CurrentDomain.BaseDirectory}ChromeDriver\\chromedriver.exe", chromeOptions);
             
             return chromeDriver;
         }
